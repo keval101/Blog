@@ -14,5 +14,11 @@ export interface BlogPost {
         title?: string
         description?: string
         keywords?: string
-    }
+    },
+    sources: [
+        {
+            link: string
+            title: string
+        }
+    ]
 }

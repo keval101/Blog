@@ -17,7 +17,7 @@
                     </div>
                 </ng-container>
 
-                <ng-container *ngIf="blog?.paragraph.length > 2 && i == 2 && blog?.images.path">
+                <ng-container *ngIf="blog?.paragraph.length > 2 && i == 2 && blog?.images?.path">
                     <div class="mb-8 text-center">
                         <img [src]="blog?.images?.path" [alt]="'Image for ' + blog?.images?.title" class="mx-auto">
                         <small>{{blog?.images?.title}}</small>
@@ -27,6 +27,13 @@
 
             <h3 class="mb-4 description-p" *ngIf="blog?.conclusion">Conclusion: </h3>
             <p  [innerHTML]="blog?.conclusion"></p>
+
+            <div *ngIf="blog?.sources" class="sources">
+                <h3 class="mb-4 description-p" *ngIf="blog?.conclusion">Source: </h3>
+                <ng-container *ngFor="let link of blog?.sources">
+                    <a [href]="link?.link">{{link?.title}}</a>
+                </ng-container>
+            </div>
 
             <div class="tags mb-20 mt-16">
                 <ng-container *ngFor="let tag of blog?.tags">

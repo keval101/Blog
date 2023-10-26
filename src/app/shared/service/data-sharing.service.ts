@@ -9,8 +9,8 @@ import { BlogPost } from '../interfaces/blog-post.interface';
 export class DataSharingService {
 
 
-  path = '/assets/data/data.json'
-  // path = `https://keval101.github.io/blog-json/db.json`1
+  // path = '/assets/data/data.json'
+  path = `https://keval101.github.io/blog-json/db.json`;
 
   changedSlides$ = new Subject();
   blogs: BlogPost[] = [];

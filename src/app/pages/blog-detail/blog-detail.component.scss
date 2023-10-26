@@ -28,6 +28,17 @@
     }
 }
 
+.sources {
+    a {
+        @apply block mb-2;
+        transition: all 0.2s ease;
+        &:hover {
+            @apply text-blue-500;
+            transition: all 0.2s ease;
+        }
+    }
+}
+
 .title {
     @apply font-semibold mb-8;
     color: var(--black);
