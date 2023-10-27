@@ -1,7 +1,7 @@
 
 <div class="custom-container">
-    <!-- <app-new-post-second-skeleton *ngIf="isLoading"></app-new-post-second-skeleton> -->
-    <owl-carousel-o [options]="customOptions" (change)="getPassedData($event)">
+    <app-new-post-second-skeleton *ngIf="isLoading"></app-new-post-second-skeleton>
+    <owl-carousel-o [options]="customOptions" (change)="getPassedData($event)" *ngIf="!isLoading">
         <ng-container *ngFor="let blog of trendingBlogs">
             <ng-template class="slide" carouselSlide>
                 <app-new-post-second [post]="blog"></app-new-post-second>
@@ -14,15 +14,17 @@
     <!-- post-list-section -->
     <ng-container>
         <div class="blog-cards">
-            <!-- <ng-container *ngIf="isLoading">
+            <ng-container *ngIf="isLoading">
                 <div *ngFor="let skeleton of totalSkeleton">
                     <app-blog-card-skeleton></app-blog-card-skeleton>
                 </div>
-            </ng-container> -->
+            </ng-container>
 
-            <div *ngFor="let blog of blogs">
-                <app-blog-card [post]="blog"></app-blog-card>
-            </div>
+            <ng-container *ngIf="!isLoading">
+                <div *ngFor="let blog of blogs">
+                    <app-blog-card [post]="blog"></app-blog-card>
+                </div>
+            </ng-container>
         </div>
         <app-load-more-btn *ngIf="blogs.length >= 9 && blogs.length != totalData.length" (emitLoadMore)="loadMoreBlogs()"></app-load-more-btn>
     </ng-container>

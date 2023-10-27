@@ -11,4 +11,19 @@
             @apply px-12 py-16;
         }
     }
+
+    &__banner {
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+
+            .image {
+                height: 210px !important;
+            }
+
+            .content {
+                width: 100% !important;
+                height: 340px !important;
+            }
+        }
+    }
 }
