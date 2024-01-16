@@ -54,7 +54,7 @@ export class AdminComponent {
     this.blogForm.value.paragraph.map(x => {
       console.log(x)
       if(x.list) {
-        x.list.title =  `<p class='list-title'>● ${x.list.title}</p> ${x.list.text}`
+        x.list.title =  `<p class='list-title'>● ${x.list.title ? x.list.title + ':' : ''}</p> ${x.list.text}`
         x.list = `<div class='list-content'> ${x.list.title} </div><span></span>`
       }
       if(x.content) {
