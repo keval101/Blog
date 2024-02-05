@@ -11,7 +11,7 @@ export class NewPostSecondComponent {
 
   
   convertNameIntoLink(title: string): string {
-    return title.toLowerCase().replace(/[:.,"'+ ]+/g, '-')
+    return title.toLowerCase().replace(/[:.,"'+? ]+/g, '-')
   }
 
   getReadMoreLink(title: string): string {
