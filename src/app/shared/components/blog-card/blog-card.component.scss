@@ -6,6 +6,7 @@
     color: #292929;
     transition: all 0.2s ease;
     background: #fff;
+    height: 100%;
 
     &:hover {
         box-shadow: 0 5px 20px rgba(229, 230, 232, 0.8);
@@ -81,14 +82,13 @@
 
         @media screen and (max-width: 768px) {
             font-size: 1.8rem;
-            height: 44px;
+            height: auto;
         }
 
         @media screen and (max-width: 500px) {
             @apply mb-3;
             font-size: 18px;
             line-height: 1.4;
-            height: auto;
         }
 
         &:hover {

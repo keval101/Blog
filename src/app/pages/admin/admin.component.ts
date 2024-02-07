@@ -73,11 +73,14 @@ export class AdminComponent {
         }
       } else if (item.list !== undefined) {
         currentContent += `<div>${item.list}</div>`;
+        delete item.list;
       }
     }
     if (currentContent !== "") {
       mergedData.push({ "content": currentContent });
     }
+    // Remove empty objects from this.blogForm.value.paragraph
+    this.blogForm.value.paragraph = this.blogForm.value.paragraph.filter(item => Object.keys(item).length !== 0);
     console.log(this.blogForm.value, mergedData)
   }
 

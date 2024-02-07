@@ -19,7 +19,11 @@
         color: var(--black);
 
         app-logo div {
-            width: 170px !important;
+            width: 140px !important;
+
+            @media screen and (max-width: 900px) {
+                width: 120px !important;
+            }
         }
 
         @media screen and (max-width: 500px) {
@@ -42,6 +46,7 @@
 }
 
 .list-link {
+    @apply flex gap-4;
     font-size: 1.8rem !important;
     font-weight: normal !important;
     li { 
