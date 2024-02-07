@@ -8,7 +8,7 @@
                 <app-blog-card [post]="blog"></app-blog-card>
             </div>
         </div>
-        <app-load-more-btn *ngIf="blogs.length >= 10"></app-load-more-btn>
+        <app-load-more-btn *ngIf="blogs.length >= 9 && blogs.length != totalData.length" (emitLoadMore)="loadMoreBlogs()"></app-load-more-btn>
     </ng-container>
 
     <ng-container *ngIf="!blogs.length">

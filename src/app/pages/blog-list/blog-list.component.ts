@@ -12,6 +12,9 @@ import { MetaTagsService } from 'src/app/shared/service/meta-tags.service';
 export class BlogListComponent {
   blogs = []
   blogType: string;
+  totalData = []
+  page = 0;
+
   constructor(
     private route: ActivatedRoute,
     private dataSharingService: DataSharingService,
@@ -25,7 +28,10 @@ export class BlogListComponent {
         this.title.setTitle(`${this.capitalizeFirstLetter(this.blogType)} Blogs`)
         const type = params['type']
         this.dataSharingService.getBlogByTypes(type.toLowerCase()).subscribe(blogs => {
+          this.page = 0;
           this.blogs = blogs.reverse();
+          this.totalData = [...blogs];
+          this.blogs.length = this.blogs.length >= 9 ? 9 : this.blogs.length
         })
       }
     })
@@ -33,5 +39,13 @@ export class BlogListComponent {
 
   capitalizeFirstLetter(str) {
     return str[0].toUpperCase() + str.slice(1);
+  }
+
+  loadMoreBlogs(): void {
+    if(this.blogs.length != this.totalData.length) {
+      this.page = this.page + 1;
+      const data = this.totalData.slice(9 * this.page, this.blogs.length + 9);
+      this.blogs = [...this.blogs, ...data];
+    }
   }
 }
