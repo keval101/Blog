@@ -5,6 +5,20 @@
         @apply flex-col pb-20;
     }
 
+
+    &-title {
+        margin-bottom: 1.75rem;
+        font-weight: 600;
+        font-size: 3.2rem;
+        color: var(--black);
+    }
+
+    &-text {
+        margin-bottom: 2rem;
+        line-height: 1.7;
+        font-size: 1.8rem;
+    }
+
     &-image {
         img {
             width: 85%;
