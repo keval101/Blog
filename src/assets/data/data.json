@@ -1870,6 +1870,40 @@
         "description": "India edges past South Africa in a nail-biting semi-final at the U19 World Cup! Relive the action with match highlights, key moments, standout players, and reactions. Who will India face in the final? ",
         "keywords": "Cricket, Under-19 Cricket World Cup, Semi-final, India, South Africa, Victory, Final, ICC, Young Talent, Thrilling Match, Nail-biter, Highlights, Analysis, Reactions, Predictions, #U19CWC, #CricketWorldCup, #INDvsSA, #AUSvsPAK, #CricketTwitter, #SportsNews, #FutureStars, Sachin Dhas, Uday Saharan, Raj Limbani, Lhuan-dre Pretorius, Musheer Khan, Ethan Williams, William Edgar"
     }
-  }
+  },
+  {
+    "title": "iOS 18: Unleash the Power of Personalization, Productivity and Privacy",
+    "id": 49,
+    "intro": "Apple unveiled iOS 18 at WWDC 2024, and it's packed with exciting features designed to make your iPhone more personal, capable, and intelligent. Here, we'll delve into the details of what iOS 18 has to offer.",
+    "paragraph": [
+        {
+            "content": "<h3>A New Era of Personalization: </h3><div><div class='list-content'> <p class='list-title'>● Home Screen Revamp:</p> iOS 18 brings a more customizable Home Screen experience. You can now edit app icon appearances, choosing from light, dark, or tinted themes. </div><span></span></div><div><div class='list-content'> <p class='list-title'>● Control Center Gets an Upgrade:</p> The redesigned Control Center features new groups of controls, making it easier to access the functions you need with a single swipe down. </div><span></span></div><div><div class='list-content'> <p class='list-title'>● Locked and Hidden Apps:</p> Privacy is paramount. iOS 18 lets you lock apps with Face ID or Touch ID for an extra layer of security. Hidden apps disappear from the Home Screen and require authentication to access, keeping your private content truly private. </div><span></span></div>"
+        },
+        {
+            "content": "<h3>Boosting Your Productivity: </h3><div><div class='list-content'> <p class='list-title'>● Smarter Siri:</p> Siri gets a major upgrade with Apple Intelligence. It can now understand your context and intent better, offering more relevant and helpful suggestions throughout the day. </div><span></span></div><div><div class='list-content'> <p class='list-title'>● Writing Assistant:</p> A system-wide Writing Assistant helps you improve your writing across all apps. It offers features like rewriting, polishing, proofreading, and summarizing text. </div><span></span></div><div><div class='list-content'> <p class='list-title'>● Enhanced Notes App:</p> The Notes app gets a productivity boost with features like live audio transcripts, collapsible sections for organization, and the ability to solve mathematical problems directly within the app. </div><span></span></div>"
+        },
+        {
+            "content": "<h3>Privacy at the Forefront: </h3><div><div class='list-content'> <p class='list-title'>● Granular Contact Sharing:</p> iOS 18 lets you grant apps access to only specific contacts, preventing them from seeing your entire contact list. </div><span></span></div><div><div class='list-content'> <p class='list-title'>● App Tracking Transparency Plus:</p> Apple continues its commitment to user privacy. You can now see a detailed report of which apps have recently accessed your location data. </div><span></span></div>"
+        },
+        {
+            "content": "<h3>Beyond the Highlights: </h3><p>These are just a few of the many exciting features in iOS 18. There are also improvements to the Health app, Maps, Safari, and more. Additionally, iOS 18 is built around Apple Intelligence, a powerful set of AI features that personalize your iPhone experience in innovative ways.</p>"
+        },
+        {
+            "content": "<h3>Getting Ready for iOS 18: </h3><p>iOS 18 is expected to be released to the public in September 2024. To prepare, keep your iPhone updated to the latest version of iOS 17 and back up your data regularly. Stay tuned for more detailed information from Apple closer to the launch date.</p>"
+        }
+    ],
+    "conclusion": "iOS 18 promises to be a significant update for iPhone users. With its focus on personalization, productivity, and privacy, iOS 18 offers a more powerful and user-friendly experience. So, get ready to unlock the potential of your iPhone with iOS 18!",
+    "thumbnail": "https://i.postimg.cc/4y47HNnt/ios-18-features.webp",
+    "tags": [
+        "News"
+    ],
+    "date": "Jun 13, 2024",
+    "isTrending": true,
+    "meta": {
+        "title": "OS 18: Unleash the Power of Personalization, Productivity & Privacy (2024 Update)",
+        "description": "Dive deep into the all-new iOS 18! Explore features like customizable Home Screens, a revamped Control Center, app locking, smarter Siri, and enhanced privacy controls. Learn how iOS 18 personalizes your iPhone experience and boosts productivity. (Updated for 2024)",
+        "keywords": "iOS 18 features, iOS 18 release date, iOS 18 customization, iPhone personalization, Control Center update, Lock apps iPhone, Siri update, Notes app update, iOS 18 privacy, iPhone privacy"
+    }
+}
   ]
 }
