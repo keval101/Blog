@@ -2,6 +2,7 @@
   "version": 2,
   "public": true,
   "name": "test-universal",
+  "installCommand": "npm install --legacy-peer-deps",
   "rewrites": [
     { "source": "/(.*)", "destination": "/api" }
   ],
